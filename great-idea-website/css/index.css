@@ -3,179 +3,302 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-	height: 100%;
-	width: 100%;
-	font-family: 'Titillium Web', sans-serif;
-	
-} 
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+}
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Monoton", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
 
 /* Your code starts here! */
 
-
-.container{
-	
-	margin: 50px;
-	
-
+.container {
+  margin: 50px;
 }
 
-header{
-	border:2px solid green;
+header {
+
 }
 
 nav {
-	border:2px solid pink;
-	display:inline-block;
-	padding:20px;
+  overflow: hidden;
+  
+
+  display: inline-block;
+  padding: 20px;
+  background-color: aliceblue;
+
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 95%; /* Full width */
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+a {
+  
+  padding: 0px 30px;
+  text-decoration: none;
+  color: gray;
 }
 
-a{
-	border:2px solid magenta;
-	padding:0px 30px;
-	text-decoration: none;
-	color:gray;
+.logo {
+  padding: 0px 5px 0px 80px;
 }
 
-.logo{
-	padding: 20px 0 15px 80px;
+.topContent {
+
+  display: inline-block;
+  box-sizing: border-box;
+  padding-top:100px;
+
+  width: 100%;
 }
 
-.topContent{
-	border: 3px solid yellow;
-	display:inline-block;
-	box-sizing:border-box;
-	
-	width:100%;
+.innovationOnDemand {
+  display: inline-block;
+  padding: 40px;
 }
 
-.innovationOnDemand{
-	display:inline-block;
-	padding: 60px;
+.innovationOnDemand h1 {
+  font-size: 70px;
+  text-align: center;
 }
 
-.innovationOnDemand h1{
-    font-size: 80px;
-    text-align: center;
+.circleLogo {
+  display: inline-block;
+  padding: 40px 40px 40px 150px;
 }
 
-.circleLogo{
-	display:inline-block;
-	padding:40px
+.button {
+  width: 60%;
+
+  padding: 5px;
+  
+  margin: 0px 30px 0px 156px;
 }
 
-.button{
-	width:60%;
-	
-	padding:5px;
-	border:2px solid black;
-	margin: 0px 30px 0px 60px;
-	
+.button p {
+  padding: 5px 10px 5px 90px;
 }
 
-.button p{
-	padding: 5px 10px 5px 45px;
+.gradient-button {
+  margin: 10px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 20px;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #fff;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  width: 150px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 25px;
+}
+.gradient-button:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin: 8px 10px 12px;
 }
 
-.middleContent{
-	border-top: 2px solid black;
-	border-bottom: 2px solid black;
-	display:inline-block;
+.gradient-button-4 {
+  background-image: linear-gradient(
+    to right,
+    #00d2ff 0%,
+    #3a7bd5 51%,
+    #00d2ff 100%
+  );
+}
+.gradient-button-4:hover {
+  background-position: right center;
 }
 
-.top2paragraphs .features .about{
-	display:inline-block;
-	
-	
+.middleContent {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  display: inline-block;
 }
 
-.feature, .about{
-    display: inline-block;
-	width: 48%;
-	padding: 20px 20px 30px 0px;
-	
+.top2paragraphs .features .about {
+  display: inline-block;
+}
+
+.feature,
+.about {
+  display: inline-block;
+  width: 48%;
+  padding: 20px 20px 30px 0px;
+}
+
+.middle-img {
+  width: 100%;
+}
+
+.services,
+.product,
+.vision {
+  display: inline-block;
+  width: 33%;
+  padding: 20px 20px 30px 0px;
+}
+
+h1 {
  
+  font-size: 60px;
 }
 
-.middle-img{
-	width:100%;
-}
- 
-.services, .product, .vision{
-    display: inline-block;
-	width: 33%;
-	padding: 20px 20px 30px 0px;
+h3 {
+  padding-top: 20px;
 }
 
-h1{
-	border: 2px solid teal;
-	font-size: 60px;
-	
-
-	
-}
-
- h3{
-	padding-top:20px;
-	
-}
-
-footer{
-	text-align: center;
-	padding: 20px 0px;
+footer {
+  text-align: center;
+  padding: 20px 0px;
 }
